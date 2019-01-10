@@ -58,7 +58,7 @@ For X86（电脑需要安装libev-dev库）:
 	apt-get install libncurses5-dev
 }
 ``` bash
-root@bob-VirtualBox:~/lepd-src# make
+root@bob-VirtualBox:~/lepd-src# make ARCH=x86
 ```
 For ARM（电脑需要安装交叉工具链 比如海思平台：arm-hisiv300-linux-gcc）:
 ``` bash
