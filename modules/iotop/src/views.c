@@ -1,6 +1,6 @@
 #include "iotop.h"
 
-#include <curses.h>
+//#include <curses.h>
 #include <math.h>
 #include <pwd.h>
 #include <stdio.h>

@@ -57,14 +57,19 @@ For X86（电脑需要安装libev-dev库）:
 	apt-get install linux-tools-common linux-tools-generic linux-tools-`uname -r`
 	apt-get install libncurses5-dev
 }
-```console
+``` bash
 root@bob-VirtualBox:~/lepd-src# make
 ```
-For ARM（电脑需要安装arm-linux-gnueabi-gcc）:
-```console
-root@bob-VirtualBox:~/lepd-src# make ARCH=arm 
+For ARM（电脑需要安装交叉工具链 比如海思平台：arm-hisiv300-linux-gcc）:
+``` bash
+root@bob-VirtualBox:~/lepd-src# make ARCH=arm HOST=arm-hisiv300-linux CROSS_COMPILE=arm-hisiv300-linux- 
+```
+For mips（电脑需要安装交叉工具链 比如mt7620a Openwrt平台：mipsel-openwrt-linux-musl-gcc）:
+``` bash
+root@bob-VirtualBox:~/lepd-src# make ARCH=mips HOST=mipsel-openwrt-linux-musl CROSS_COMPILE=mipsel-openwrt-linux-musl- 
 ```
 ## 如何运行
+
 
 运行lepd需要root权限，因为系统有些proc文件无root权限无法读取。
 
