@@ -2,7 +2,7 @@ include config.mk
 
 .PHONY:all clean
 
-MODULE := ev
+MODULE := rpc
 MODULE += busybox-lite
 MODULE += customization
 MODULE += iopp
